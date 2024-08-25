@@ -1,0 +1,264 @@
+.fullcontainer{
+    margin-top: 10px;
+    width:100%;
+    height:1000px;
+
+    display:flex;
+    flex-direction: column;
+    background-color: #f8f8f8; 
+}
+.section{
+    width:100%;
+
+    margin-top: 15px;
+}
+.heading{
+    margin: 4px 0px 3px 10px;
+    width:300px;
+    height:40px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.heading>p{
+    font-size:17px;
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.section-value-container{
+    width:100%;
+   
+
+    display: flex;
+    flex-wrap: wrap;
+}
+.values{
+    width:450px;
+    height:230px;
+    border:1px solid gray;
+    margin: 5px 10px 1px 10px;
+    border-radius: 3px;
+    
+}
+.images{
+    width:450px;
+    height:228px;
+    
+    
+}
+.add-widget{
+    width:200px;
+    height:50px;
+    border-radius: 5px;
+    font-size: 20px;
+    font-weight: 20;
+    background-color: transparent;
+}
+.valuesbutton{
+    width:450px;
+    height:230px;
+    
+    margin: 5px 10px 1px 10px;
+    border-radius: 3px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.valuesbutton>button:hover{
+    cursor: pointer;
+    font-weight: bold;
+}
+.image{
+    width:300px;
+    height: 70px;
+    
+}
+.name{
+    width:95%;
+    margin-left: 5px;
+    padding-left: 10px;
+    height:40px;
+    
+    font-size: 20px;
+    font-weight: bold;
+    color: gray;
+    display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid #ddd;
+  padding: 5px;
+  position: relative;
+    
+}
+.subdivide{
+    display: flex;
+}
+.pic{
+    width:75%;
+    height:170px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+.text{
+    width:25%;
+    height:160px;
+    font-weight: bold;
+    padding:5px;
+  
+}
+.img{
+    width:320px;
+    height:160px;
+   
+}
+
+
+
+.sidebar {
+    width: 500px;
+    height: 90%;
+    background-color: #f8f8f8;
+    padding: 20px;
+    border-left: 1px solid #ddd;
+    position: fixed;
+    right: 0;
+    top: 0;
+    box-shadow: -2px 0 5px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  
+  .category-selector {
+   
+    display: flex;
+    margin-bottom: 5px;
+  }
+  
+  .category-option {
+    margin-right: 10px;
+    padding: 5px 10px;
+    cursor: pointer;
+    font-weight: bold;
+    border-bottom: 3px solid transparent;
+  }
+  
+  .category-option.selected {
+    border-bottom: 3px solid #007bff; 
+  }
+  
+  input[type='text'] {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 5px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+  }
+  
+  textarea {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 5px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+    height: 120px; 
+  }
+  
+  .sidebar-buttons {
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .sidebar-buttons button {
+    width: 48%;
+    padding: 10px;
+    font-size: 16px;
+    font-weight: bold;
+    border-radius: 4px;
+    border: none;
+    cursor: pointer;
+  }
+  
+  .sidebar-buttons button:first-child {
+    background-color: #007bff;
+    color: #fff;
+  }
+  
+  .sidebar-buttons button:last-child {
+    background-color: #f8f8f8;
+    color: #007bff;
+    border: 1px solid #007bff;
+  }
+  
+  .sidebar-buttons button:hover {
+    opacity: 0.9;
+  }
+  
+ 
+  
+  .delete-button {
+    background-color: transparent;
+    border: none;
+    color: red;
+    font-size: 14px;
+    cursor: pointer;
+    position: absolute;
+    top: 5px;
+    right: 5px;
+  }
+  
+  .delete-button:hover {
+    color: darkred;
+  }
+
+
+  @media (max-width: 768px) {
+    .fullcontainer {
+        flex-direction: column; 
+    }
+
+    .section {
+        width: 100%; 
+        margin-bottom: 15px; 
+    }
+
+    .heading {
+        width: 100%;
+        justify-content: center;
+        margin-bottom: 10px; 
+    }
+
+    .section-value-container {
+        flex-direction: column; 
+        width: 100%; 
+    }
+
+    .values, .valuesbutton {
+        width: 100%; 
+        margin-bottom: 10px; 
+    }
+
+    .pic, .img {
+        width: 100%; 
+        height: auto; 
+    }
+
+    .text {
+        width: 100%; 
+        height: auto; 
+    }
+
+    .sidebar {
+        width: 100%; 
+        position: relative; 
+        height: auto; 
+        box-shadow: none; 
+    }
+}
