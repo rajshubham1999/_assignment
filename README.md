@@ -4,6 +4,11 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 
 ## Available Scripts
 
+### Step To Run The Project 
+1). Deploy in your Local(VSCode)
+2). npm install
+3).npm start
+
 In the project directory, you can run:
 
 ### `npm start`
